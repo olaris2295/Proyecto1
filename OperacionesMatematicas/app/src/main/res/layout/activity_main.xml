@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OPERACIONES MATEMÁTICAS"
+        android:textColor="@android:color/background_light"
+        android:textSize="27sp"
+        android:textStyle="bold"
+        android:padding="13sp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="295dp"
+        app:srcCompat="@drawable/logo2"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/campo1"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/background_light"
+        android:hint="Por favor ingrese el número 1"
+        android:inputType="numberSigned"
+        android:padding="6dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/campo2"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_margin="16dp"
+        android:background="@android:color/background_light"
+        android:hint="Por favor ingrese el número 2"
+        android:inputType="numberSigned"
+        android:padding="6dp"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <Button
+            android:id="@+id/btnSumar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SUMAR"
+            android:onClick="onclick"
+            />
+
+        <Button
+            android:id="@+id/btnRestar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESTAR"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnSumar"
+            android:layout_toEndOf="@+id/btnSumar"
+            android:onClick="onclick"
+            />
+        <Button
+        android:id="@+id/btnMultiplicar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Multiplicar"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnRestar"
+        android:layout_toEndOf="@+id/btnRestar"
+        android:onClick="onclick"
+        />
+        <Button
+            android:id="@+id/btnDividir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DIVIDIR"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/btnMultiplicar"
+            android:layout_toEndOf="@+id/btnMultiplicar"
+            android:onClick="onclick"
+            />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/etiResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="RESULTADO"
+        android:textColor="@android:color/background_light"
+        android:textSize="20sp"
+        android:padding="20dp"
+        >
+
+    </TextView>
+
+        </LinearLayout>
+
+
